@@ -1,6 +1,6 @@
-from pieces import *
+from board import *
 
-knightWhiteb1 = knight.Knight ("black", "b1")
-print knightWhiteb1.color
-RookWhiteA1 = rook.Rook ("white", "a1")
-print RookWhiteA1.color
+testpieces = board.Board().pieces
+for i in testpieces:
+    print i
+    print i.color

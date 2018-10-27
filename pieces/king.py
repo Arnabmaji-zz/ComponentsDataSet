@@ -1,14 +1,7 @@
-import piece
+from piece import piece
+from parameters import board_length
 
 
-class King:
-    def __init__(self, color):
-
-        self.color = color
-
-        if color == 0:
-            self.initPosition = (4, 1)
-        else:
-            self.initPosition = (4, 8)
-
-        self.position = self.initPosition
+class King(piece):
+    def __init__(self, color, initPosition):
+        piece.__init__(self, color, initPosition)

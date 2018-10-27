@@ -1,7 +1,8 @@
-class Rook:
-    def __init__ (self, color):
+from piece import piece
+from parameters import board_length
 
-        self.color = color
 
-        self.boardlength = 8;
+class Rook(piece):
+    def __init__(self, color, initPosition):
+        piece.__init__(self, color, initPosition)
 

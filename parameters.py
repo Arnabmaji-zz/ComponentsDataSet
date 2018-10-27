@@ -1,0 +1,1 @@
+board_length = 8

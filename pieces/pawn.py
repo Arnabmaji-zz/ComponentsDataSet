@@ -1,11 +1,7 @@
-import piece
+from piece import piece
+from parameters import board_length
 
 
-class Pawn:
-    def __init__(self, color, number):
-        self.color = color
-
-        if color == 0:
-            self.initPosition = (2, number)
-        elif color == 1:
-            self.initPosition = (7, number)
+class Pawn(piece):
+    def __init__(self, color, initPosition):
+        piece.__init__(self, color, initPosition)

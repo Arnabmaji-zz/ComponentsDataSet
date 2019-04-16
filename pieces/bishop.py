@@ -11,5 +11,11 @@ class Bishop (piece):
         position = self.position
         x = position[0]
         y = position[1]
-        xDirection = [-1, 1]
+        xDirection = [-1,1]
         yDirection = [-1,1]
+
+        for m in xDirection:
+            for n in yDirection:
+                
+                for i in range (8):
+                    position = [x + m*i, y + n*i]
